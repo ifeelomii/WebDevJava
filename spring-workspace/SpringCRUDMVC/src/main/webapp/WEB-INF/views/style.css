@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+
+*{
+	display:grid;
+	align-items:center;
+	justify-contents:center;
+}
+.contain{
+	display:grid;
+	align-items:center;
+	justify-contents:center;
+}
+
+table > thead > tr > th{
+	padding:5px;
+	margin:2px solid black;
+}

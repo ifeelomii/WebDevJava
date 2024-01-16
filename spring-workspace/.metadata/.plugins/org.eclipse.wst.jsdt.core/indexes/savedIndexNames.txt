@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+D:\Web Dev Courses\CDAC\Java\AdvancedJava\spring-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
