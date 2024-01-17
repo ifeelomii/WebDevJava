@@ -37,11 +37,11 @@ public class ProductDao {
 	}
 	
 	public void addNewProductDao(Product p) {
-		jdbcTemplate.update("insert into product_tbl set pname=?,qty=?,price=? where pid=?",new Object[] {p.getPname(),p.getQty(),p.getPrice(),p.getPid()});		
+		jdbcTemplate.update("insert into product_tbl(pid,pname,qty,price) values(?,?,?,?)",new Object[] {p.getPid(),p.getPname(),p.getQty(),p.getPrice()});		
 	}
 
 	public void editProductDao(Product p) {
-		jdbcTemplate.update("update into product_tbl set pname=?,qty=?,price=? where pid=?",new Object[] {p.getPname(),p.getQty(),p.getPrice(),p.getPid()});
+		jdbcTemplate.update("update product_tbl set pname=?,qty=?,price=? where pid=?",new Object[] {p.getPname(),p.getQty(),p.getPrice(),p.getPid()});
 	}
 	
 	public void deleteProductDao(int pid) {
